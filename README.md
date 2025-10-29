@@ -1,7 +1,16 @@
-#. Progetto Artigiano
+
+
+
+# Progetto Artigiano
 
 **Progetto Artigiano** è un sito monopagina in **React** e **Bootstrap**, progettato per un **artigiano rteale** che lavora nel settore del cartongesso e vuole farsi conoscere online attraverso i propri lavori.  
-Il sito nasce come vetrina moderna, pulita e ottimizzata **SEO on-page**, pensata per mostrare professionalità e competenza.
+Il sito nasce come vetrina moderna, pulita e ottimizzata **SEO on-page**, pensata per mostrare professionalità e competenza.  
+
+---
+
+## Progressi e nuove funzioni
+
+- 
 
 ---
 
