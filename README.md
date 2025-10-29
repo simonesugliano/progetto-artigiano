@@ -10,7 +10,9 @@ Il sito nasce come vetrina moderna, pulita e ottimizzata **SEO on-page**, pensat
 
 ## Progressi e nuove funzioni
 
-- 
+- - [Wireframe e struttura](./documents/wireframes)  
+  Schema visivo e architettura del sito, con suddivisione delle sezioni e logica di navigazione.
+
 
 ---
 
