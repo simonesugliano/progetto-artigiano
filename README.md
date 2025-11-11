@@ -1,3 +1,10 @@
+[![Visita il sito ArtiTam](https://img.shields.io/badge/🌐_Visita_il_sito-ArtiTam.altervista.org-4CAF50?style=for-the-badge&logo=google-chrome&logoColor=white)](https://artitam.altervista.org)
+
+[![Stato del repository Auto-Updated](https://img.shields.io/badge/Status-Auto--Updated-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tuo-utente/tuo-repo)  
+[![Sorgente Google Drive](https://img.shields.io/badge/Source-Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com)  
+[![Frontend React](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org)  
+[![Hosting Altervista](https://img.shields.io/badge/Hosting-Altervista-orange?style=for-the-badge&logo=altervista&logoColor=white)](https://it.altervista.org)  
+[![Sync via GitHub API](https://img.shields.io/badge/Sync-GitHub%20API-black?style=for-the-badge&logo=github&logoColor=white)](https://docs.github.com/en/rest)
 
 
 
@@ -54,14 +61,26 @@ un sito che si aggiorna automaticamente con nuove foto dei lavori, offre una nav
 ---
 
 ## Fasi di sviluppo
+
 1. **Setup locale con React + Bootstrap**  
-   Struttura statica e sezioni base con immagini segnaposto..  
-2. **Dynamic gallery con JSON**  
-   Collegamento automatico a cartella locale o cloud.  
+   Creazione della struttura base del sito monopagina, con componenti modulari, layout responsivo e immagini segnaposto per impostare il design complessivo.  
+
+2. **Dynamic Gallery con JSON**  
+   Implementazione di un sistema di galleria completamente automatizzato basato su un file `gallery.json` centralizzato.  
+   Il file viene generato da uno **script Google Apps Script** che scandisce una cartella Drive dedicata, raccoglie i metadati (nome file, percorso, descrizione, timestamp, ecc.) e li esporta in formato JSON strutturato.  
+   Lo script effettua quindi un **commit automatico tramite GitHub API**, aggiornando il repository renmoto ogni volta che vengono aggiunte o rimosse immagini.  
+   Sul lato front-end, l’app React esegue una **fetch asincrona** del `gallery.json` per costruire dinamicamente la griglia delle immaginigestendo caricamento progressivo, fallback e caching locale per ottimizzare le performance e ridurre i tempi di rendering.  
+   In uesto modo la galleria resta **sincronizzata in tempo reale** con gli upload del cliente, senza richiedere alcun intervento manuale.
+
 3. **Social automation**  
-   Script backend per post automatici su Facebook e Instagram.  
-4. **Deploy e ottimizzazione SEO**  
-   Build statica e pubblicazione su Altervista.
+   Script backend per post automatici su Facebook e Instagram. **SARA' IMPLEMENTATO A SEGUIRE**
+   
+5. **Deploy e ottimizzazione SEO**  
+   Creazione della build statica ottimizzata e pubblicazione finale su **Altervista**, con configurazione personalizzata per il corretto funzionamento di React in ambiente statico.  
+   Sono stati aggiunti meta tag dinamici, schema `JSON-LD` per il markup **LocalBusiness**, favicon multi-dispositivo e gestione delle immagini in formato **WebP/AVIF** per migliorare le prestazioni e l’indicizzazione.  
+   La struttura del sito è stata ottimizzata secondo le linee guida **Core Web Vitals**, con caricamento asincrono degli asset, lazy load delle immagini e compressione delle risorse.  
+   Infine, è stato implementato il redirect automatico da HTTP a HTTPS e la verifica di compatibilità cross-browser per garantire accessibilità e SEO locale ottimale.
+
 
 ---
 
